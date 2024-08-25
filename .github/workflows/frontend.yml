@@ -1,7 +1,10 @@
+name: checking Version of npm and node
 on: push
 jobs:
   first-job:
     runs-on: windows-latest
     steps:
-      - run: node --version
-      - run: npm --version
+      - name: Checking the version of node
+        run: node --version
+      - name: Checking the version of npm
+        run: npm --version
